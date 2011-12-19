@@ -1,0 +1,47 @@
+CACHE MANIFEST
+#v1.3.11
+
+CACHE:
+
+###### STATIC FILES #######
+
+#favicon
+favicon.ico
+
+#js libs
+//ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js
+js/libs/jquery-1.7.min.js
+js/libs/modernizr-2.0.6.min.js
+js/libs/underscore-1.2.3.min.js
+js/libs/backbone-0.5.3.min.js
+js/libs/plug-0.7.min.js
+
+#css libs
+css/zero.css
+
+#fonts
+
+#DroidSans
+css/font-face/DroidSans/stylesheet.css
+css/font-face/DroidSans/DroidSans-Bold-webfont.eot
+css/font-face/DroidSans/DroidSans-Bold-webfont.svg
+css/font-face/DroidSans/DroidSans-Bold-webfont.ttf
+css/font-face/DroidSans/DroidSans-Bold-webfont.woff
+css/font-face/DroidSans/DroidSans-webfont.eot
+css/font-face/DroidSans/DroidSans-webfont.svg
+css/font-face/DroidSans/DroidSans-webfont.ttf
+css/font-face/DroidSans/DroidSans-webfont.woff
+
+###### DYN FILES ######
+
+#js
+#js/plugins.js
+#js/application.js
+
+#css
+css/plugins.css
+css/style.css
+
+NETWORK:
+index.html
+*

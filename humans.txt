@@ -1,0 +1,13 @@
+/* TEAM */
+  Software Developer: Fatih Kadir AKIN
+  Site: http://fatihkadirakin.com
+  Twitter: @fkadev
+  Location: Istanbul
+
+/* THANKS */
+  Names (& URL): 
+
+/* SITE */
+  Standards: HTML5, CSS3
+  Components: Modernizr, jQuery
+  Software:

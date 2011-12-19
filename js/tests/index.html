@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+    <title>Unit Test Suite</title>
+    <link rel="stylesheet" href="src/style.css">
+
+	<!--[if lt IE 9]>
+	<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+    <script type="text/javascript" src="src/unit.js"></script>
+    <script>
+    	var hash = window.location.hash.replace(/^#/,'');
+    	test.suites = hash.split(':')[1].split('-');
+    	document.title = hash.split(':')[0];
+    	window.onload = function() {document.getElementsByTagName('h1')[0].innerHTML = document.title}
+    	window.onhashchange = function() {window.location.reload();}
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Test Suite</h1>
+    </header>
+    <section id="container">
+    	<p id="description">
+    	In order to call one or more test file, you should call it using the <code>index.html#ProjectTitle:testsuite1-testsuite2-testsuite3</code> syntax.
+    	It'll make the title <i>ProjectTitle</i> and will call three test files; <i>testsuite1.test.js</i>, <i>testsuite2.test.js</i>, <i>testsuite3.test.js</i> on the root.
+    	</p>
+    </section>
+    <script type="text/javascript" src="src/main.js"></script>
+    <script>
+    	if (document.getElementsByClassName('group').length > 0)
+    		document.getElementById('description').style.display = 'none';
+    </script>
+    <footer>
+        Total <script>document.write(test.suites.length)</script> test suites,
+        <script>document.write(document.getElementsByClassName('group').length)</script> test groups,
+        <script>document.write(document.getElementsByClassName('test').length)</script> tests found.
+        <script>document.write(document.getElementsByClassName('ok').length)</script> of this tests are <strong>OK</strong>
+        and <script>document.write(document.getElementsByClassName('fail').length)</script> of this tests are <strong>FAILED</strong>
+    </footer>
+    
+</body>
+</html>

@@ -1,0 +1,24 @@
+@charset 'utf-8';
+
+/* font-faces */
+@import 'font-face/DroidSans/stylesheet.css';
+/*
+@import 'font-face/<font-name>/stylesheet.css';
+@import 'font-face/<font-name>/stylesheet.css';
+*/
+
+/* the art */
+.wrap {
+	margin: 0 auto;
+	width: 960px;
+	
+}
+
+/* paintings */
+body {
+	font-family: 'DroidSansRegular';
+}
+
+h1 {
+	font-size: 38px;
+}
