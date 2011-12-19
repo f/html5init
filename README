@@ -1,1 +1,12 @@
 HTML5 Initializer
+
+* HTML5 initializer kit including
+  - jQuery
+  - Underscore.js
+  - Backbone.js
+  - Modernizr
+  - plug.js
+  - Javascript UnitTest framework
+  - HTML5 AppCache Manifest
+
+You just checkout and start your project.
