@@ -21,11 +21,11 @@
 	<link rel="shortcut icon" href="favicon.ico">
 	<![endif]-->
 	
-	<link rel="stylesheet" href="css/zero.css">
-	<link rel="stylesheet" href="css/style.css">
-	<link rel="stylesheet" href="css/plugins.css">
+	<link rel="stylesheet" href="static/css/zero.css">
+	<link rel="stylesheet" href="static/css/style.css">
+	<link rel="stylesheet" href="static/css/plugins.css">
 	
-	<script src="js/libs/modernizr-2.0.6.min.js"></script>
+	<script src="static/js/libs/modernizr-2.0.6.min.js"></script>
 
 </head>
 <body>
@@ -38,37 +38,33 @@
 		<p>Lorem ipsum dolor sit amet.</p>
 	</div><!--/main -->
 	<footer class="wrap">
-		<a href="js/tests/index.html#UnitTests:test">js tests</a>
+		<a data-bypass href="static/js/tests/index.html#UnitTests:test">js tests</a>
 	</footer>
 </div><!--/container -->
 
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
-<script>window.jQuery || document.write('<script src="js/libs/jquery-1.7.min.js"><\/script>')</script>
-<script src="js/libs/underscore-1.2.3.min.js"></script>
-<script src="js/libs/backbone-0.5.3.min.js"></script>
-<script src="js/libs/plug-0.7.min.js"></script>
-<script src="js/plugins.js?v1"></script>
-<script src="js/application.js?v6"></script>
-<script>
-	//Run Application
-	$(function() { App.start(); });
-</script>
+<script>window.jQuery || document.write('<script src="static/js/libs/jquery-1.7.min.js"><\/script>')</script>
+<script src="static/js/libs/underscore-1.2.3.min.js"></script>
+<script src="static/js/libs/backbone-0.5.3.min.js"></script>
+<script src="static/js/plugins.js"></script>
+
+<!-- Application -->
+<script src="static/js/app/index.js"></script>
+<script src="static/js/app/modules/example.js"></script>
+<!-- Modules -->
+
+<!-- /Modules -->
+<!-- /Application -->
+
 <script>
 	var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']]; // Change UA-XXXXX-X to be your site's ID
 	(function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];g.async=1;
 	g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
 	s.parentNode.insertBefore(g,s)}(document,'script'));
 </script>
-
 <!--[if lt IE 7 ]>
 	<script src="//ajax.googleapis.com/ajax/libs/chrome-frame/1.0.2/CFInstall.min.js"></script>
 	<script>window.attachEvent("onload",function(){CFInstall.check({mode:"overlay"})})</script>
 <![endif]-->
-
-<!--view-templates-->
-<script type="text/x-view-template" id="example-template">
-	{{ message }} ~ <span>{{ random }}</span>
-</script>
-<!--/view-templates-->
 </body>
 </html>
